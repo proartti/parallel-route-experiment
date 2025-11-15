@@ -1,8 +1,9 @@
 export default async function EventPage({
-  params: { eventId },
+  params,
 }: {
-  params: { eventId: string };
+  params: Promise<{ eventId: string }>;
 }) {
+  const { eventId } = await params;
   // fetch and render event
-  return <div>Event Page: {eventId || "No Event ID"}</div>;
+  return <div>Event Page: event id:{eventId || "No Event ID"}</div>;
 }

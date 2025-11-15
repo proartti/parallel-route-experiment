@@ -9,8 +9,8 @@ export default function PatientLayout({
 }) {
   return (
     <div>
-      <h1 className="text-3xl">Root Layout</h1>
-      <hr />
+      <h1 className="text-3xl font-semibold">Root Layout</h1>
+      <hr className="my-6" />
       <div className="grid grid-cols-3 gap-4">
         <section>{info}</section>
         <section>{history}</section>
