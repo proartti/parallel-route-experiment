@@ -8,16 +8,14 @@ export default function PatientLayout({
   event: React.ReactNode;
 }) {
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr 1fr",
-        gap: "1rem",
-      }}
-    >
-      <section>{info}</section>
-      <section>{history}</section>
-      <section>{event}</section>
+    <div>
+      <h1 className="text-3xl">Root Layout</h1>
+      <hr />
+      <div className="grid grid-cols-3 gap-4">
+        <section>{info}</section>
+        <section>{history}</section>
+        <section>{event}</section>
+      </div>
     </div>
   );
 }

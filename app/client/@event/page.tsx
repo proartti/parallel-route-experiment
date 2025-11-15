@@ -1,8 +1,4 @@
-export default async function EventSlot({
-  params: { eventId },
-}: {
-  params: { eventId: string };
-}) {
+export default async function EventSlot() {
   // fetch and render event
-  return <div>Event Page: {eventId || "No Event ID"}</div>;
+  return <div>Event Page root</div>;
 }
